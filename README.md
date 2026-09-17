@@ -9,7 +9,6 @@ Ce dépôt ne contient **que le code** ; les énoncés de TP sont distribués su
 ## Prérequis
 
 - Ubuntu 24.04 LTS ou 22.04 LTS ;
-- `git` ;
 - **PHP 8.4**, depuis le PPA `ondrej/php` — pas le PHP du système, qui est 8.1 sur 22.04 et 8.3
   sur 24.04. Toute la classe travaille ainsi sur la même version, donc sur les mêmes messages
   d'erreur :
@@ -27,18 +26,20 @@ Ce dépôt ne contient **que le code** ; les énoncés de TP sont distribués su
 
 ## Les points de reprise
 
-**Une semaine manquée ne doit bloquer personne.** Chaque TP a donc deux tags :
+**Une semaine manquée ne doit bloquer personne.** Chaque TP a deux points de reprise, que vous
+téléchargez en archive zip :
 
-| tag | état du code |
+| archive | contenu |
 |---|---|
 | `semNN-depart` | ce dont vous avez besoin pour commencer le TP de la semaine NN |
 | `semNN-corrige` | le code tel qu'il devrait être à la fin de ce TP |
 
-Si vous avez manqué une semaine, ou si votre code est parti de travers, repartez du tag de départ
-du TP du jour :
+L'adresse est toujours de la même forme, par exemple pour commencer le TP de la semaine 2 :
 
-```bash
-git fetch --tags
-git switch -c sem03 sem03-depart   # une branche de travail à partir du tag
-composer install                   # les dépendances changent d'une semaine à l'autre
-```
+<https://github.com/vianney-g/ifnti_php_projet/archive/refs/tags/sem02-depart.zip>
+
+Décompressez l'archive, et travaillez dans le dossier obtenu. Dès que le projet utilise Composer,
+lancez `composer install` dans ce dossier avant toute autre chose : les dépendances ne sont pas
+dans l'archive.
+
+Chaque archive contient aussi `CHOIX.md` : le journal des décisions prises jusque-là, et pourquoi.
