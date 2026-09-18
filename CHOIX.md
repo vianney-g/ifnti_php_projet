@@ -20,8 +20,13 @@
 - **On stocke les exemplaires possédés et les exemplaires sortis, pas les disponibles.** Le
   troisième nombre se déduit des deux autres ; le garder à part, c'est se préparer à ce qu'il les
   contredise.
-- **`array_values` après `array_filter`.** Le filtre garde les clés d'origine : sans lui, le
-  résultat d'une recherche peut commencer à la clé 4, ce qui casse tout affichage numéroté.
+- **La recherche est une boucle, pas un `array_filter`.** Filtrer en une ligne demande de passer
+  une fonction en argument, donc de savoir en écrire une : ce sera pour la semaine prochaine. En
+  attendant, un `foreach` qui empile dans `$resultats[]` — et dont les clés, elles, partent bien
+  de 0.
+- **Les livres sont rangés par année à la main.** Trier un tableau de tableaux demande la même
+  chose : une fonction de comparaison. `sort($livres)` « marche », mais compare les livres sur leur
+  première clé, ce qui n'est pas une décision, juste un hasard d'écriture.
 - **Une recherche vide n'affiche pas un tableau vide** mais une phrase qui rappelle le terme
   cherché. Un tableau sans ligne ressemble à une panne.
 - **La recherche ignore la casse, pas les accents.** `mb_strtolower` suffit pour `KOUROUMA`, mais
