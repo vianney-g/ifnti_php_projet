@@ -5,3 +5,7 @@
 .DS_Store
 .idea/
 .vscode/
+
+# Le journal des choix du prof : il ne part pas dans les archives des
+# étudiants, qui doivent écrire le leur.
+/CHOIX.md

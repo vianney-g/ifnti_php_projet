@@ -42,4 +42,6 @@ Décompressez l'archive, et travaillez dans le dossier obtenu. Dès que le proje
 lancez `composer install` dans ce dossier avant toute autre chose : les dépendances ne sont pas
 dans l'archive.
 
-Chaque archive contient aussi `CHOIX.md` : le journal des décisions prises jusque-là, et pourquoi.
+L'archive ne contient pas de `CHOIX.md` : ce fichier-là est le vôtre. Si vous repartez d'un
+corrigé, relisez le code et écrivez vous-même pourquoi il est ainsi — c'est ce que vous aurez à
+défendre à l'oral, et c'est en le formulant que ça se retient.
